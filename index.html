@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruchita More | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fdf6ff;
+      color: #2c2c54;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li { margin: 0 15px; }
+    nav ul li a {
+      text-decoration: none;
+      font-size: 1.1em;
+      color: #6a0dad;
+      font-weight: 500;
+    }
+    nav ul li a:hover, nav ul li a.active {
+      color: #ff7f50;
+      border-bottom: 2px solid #ff7f50;
+    }
+    .hero {
+      padding: 130px 20px 90px;
+      text-align: center;
+      background: #fff;
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      color: #6a0dad;
+    }
+    .hero p {
+      font-size: 1.3em;
+      color: #555;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff7f50;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .cta:hover {
+      background: #e56740;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(106, 13, 173, 0.1);
+    }
+    h2 {
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+    .about img {
+      max-width: 200px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+    }
+    .project {
+      margin-bottom: 30px;
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      color: #2c2c54;
+    }
+    .project a {
+      color: #6a0dad;
+      text-decoration: none;
+    }
+    .project a:hover {
+      color: #ff7f50;
+    }
+    .skills ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+    .skills ul li {
+      background: #e8dcff;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+    }
+    .contact a {
+      color: #6a0dad;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      color: #ff7f50;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #6a0dad;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      nav ul { flex-direction: column; }
+      nav ul li { margin: 10px 0; }
+      .hero h1 { font-size: 2em; }
+      section { margin: 20px; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Ruchita More</h1>
+    <p>Aspiring Web Developer & Creative Technologist</p>
+    <a href="#projects" class="cta">Explore My Work</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="https://via.placeholder.com/200" alt="Ruchita More">
+    <p>Hello! I'm Ruchita More, a first-year B.Tech student passionate about front-end development and design. I love blending creativity and technology to build meaningful web experiences.</p>
+    <p><strong>Education:</strong> MIT Academy of Engineering, FY BTech</p>
+    <p><strong>Objective:</strong> To grow as a full-stack web developer and contribute to innovative projects in tech.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Designed a personal portfolio using HTML, CSS, and responsive design principles.</p>
+      <p><strong>Tools:</strong> HTML, CSS, Media Queries</p>
+      <p><a href="#">GitHub Link (coming soon)</a></p>
+    </div>
+    <div class="project">
+      <h3>Simple Calculator</h3>
+      <p>Built a basic calculator using HTML, CSS, and JavaScript with a clean UI.</p>
+      <p><strong>Tools:</strong> HTML, JavaScript</p>
+      <p><a href="#">GitHub Link (coming soon)</a></p>
+    </div>
+    <div class="project">
+      <h3>Login Form UI</h3>
+      <p>Created a responsive login form using modern CSS techniques.</p>
+      <p><strong>Tools:</strong> HTML, Flexbox, CSS3</p>
+      <p><a href="#">GitHub Link (coming soon)</a></p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <h3>Technical</h3>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript (Beginner)</li>
+      <li>Responsive Web Design</li>
+      <li>UI/UX Basics</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Communication</li>
+      <li>Creativity</li>
+      <li>Time Management</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ruchitamore@example.com">ruchitamore@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/ruchitamore</a></p>
+    <p>GitHub: <a href="#">github.com/ruchitamore</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ruchita More. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
